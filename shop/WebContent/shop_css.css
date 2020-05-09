@@ -1,0 +1,135 @@
+@charset "UTF-8";
+
+td, tr {
+	padding: 10px;
+}
+
+input.main_button {
+	background: #1AAB8A;
+	color: #fff;
+	border: none;
+	position: relative;
+	height: 40px;
+	font-size: 0.8em;
+	padding: 0 1.5em;
+	cursor: pointer;
+	transition: 800ms ease all;
+	outline: none;
+}
+
+input.main_button:hover {
+	background: #fff;
+	color: #1AAB8A;
+}
+
+input.main_button:before, .main_button:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 2px;
+	width: 0;
+	background: #1AAB8A;
+	transition: 400ms ease all;
+}
+
+input.main_button:after {
+	right: inherit;
+	top: inherit;
+	left: 0;
+	bottom: 0;
+}
+
+input.main_button:hover:before, .main_button:hover:after {
+	width: 100%;
+	transition: 800ms ease all;
+}
+
+table.board_table {
+	font-family: sans-serif;
+	border-collapse: collapse;
+	text-align: left;
+	line-height: 1.5;
+}
+
+table.board_table thead {
+	padding: 10px;
+	font-weight: bold;
+	vertical-align: top;
+	color: #367c53;
+	border-bottom: 3px solid #036;
+}
+
+table.board_table tbody {
+	width: 150px;
+	padding: 10px;
+	font-weight: bold;
+	vertical-align: top;
+	border-bottom: 1px solid #ccc;
+	background: #f3f6f7;
+}
+
+table.board_table td {
+	width: 350px;
+	padding: 10px;
+	vertical-align: top;
+	border-bottom: 1px solid #ccc;
+}
+
+input.green {
+	background: #82c8a0;
+	box-shadow: 0px 4px 0px #87a86f;
+}
+
+input.btn.green:active {
+	box-shadow: 0 0 #ff4c4b;
+	background-color: #ff4c4b;
+}
+
+input.btn {
+	position: relative;
+	border: 0;
+	padding: 15px 25px;
+	display: inline-block;
+	text-align: center;
+	color: white;
+}
+
+input.btn:active {
+	top: 4px;
+}
+
+input.mini {
+	padding: 4px 12px;
+	font-size: 12px;
+}
+
+#main_table {
+	position: relative;
+	margin: 0 auto;
+}
+
+#floatMenu {
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	max-height: 800px;
+	right: 50px;
+	top: 250px;
+}
+
+table.login_table1 tbody {
+	text-align: center;
+	width: 150px;
+	padding: 20px;
+	font-weight: bold;
+	vertical-align: top;
+	align-content: center;
+}
+
+.nameview {
+	font-weight: bold;
+	border:0;
+	outline:0;
+	background-color: #ffffff;
+}
